@@ -118,6 +118,39 @@
             color: #fff;
         }
 
+        .btn-churchill {
+            background: linear-gradient(135deg, #1a3a1a, #2e7d32);
+            color: #e8e8f0;
+            border: 1px solid #2e7d32;
+        }
+
+        .btn-napoleon {
+            background: linear-gradient(135deg, #1a1060, #3949ab);
+            color: #ffd700;
+            border: 1px solid #3949ab;
+        }
+
+        .btn-tesla {
+            background: linear-gradient(135deg, #0d1b3e, #1565c0);
+            color: #7ec8e3;
+            border: 1px solid #1565c0;
+        }
+
+        .btn-wilde {
+            background: linear-gradient(135deg, #1b3a2a, #00695c);
+            color: #e8e8f0;
+            border: 1px solid #00695c;
+        }
+
+        .section-label {
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #555;
+            margin: 18px 0 8px;
+            width: 100%;
+        }
+
         .quote-block {
             font-size: 1.25rem;
             line-height: 1.6;
@@ -222,10 +255,18 @@
             <h2>Vælg en person:</h2>
             <form method="POST">
                 <input type="hidden" name="action" value="select_person">
+                <p class="section-label">Nutid</p>
                 <div class="person-grid">
-                    {% for key, name in persons.items() %}
+                    {% for key in ["Trump", "Keanu", "Elon", "Pope", "Dalai"] %}
                     <button type="submit" name="person" value="{{ key }}"
-                            class="btn btn-{{ key | lower }}">{{ name }}</button>
+                            class="btn btn-{{ key | lower }}">{{ persons[key] }}</button>
+                    {% endfor %}
+                </div>
+                <p class="section-label">Historiske</p>
+                <div class="person-grid">
+                    {% for key in ["Churchill", "Napoleon", "Tesla", "Wilde"] %}
+                    <button type="submit" name="person" value="{{ key }}"
+                            class="btn btn-{{ key | lower }}">{{ persons[key] }}</button>
                     {% endfor %}
                 </div>
             </form>
