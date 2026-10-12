@@ -56,6 +56,36 @@ quotes = {
             "I communicate exclusively via meme for efficiency.",
             "Money is just compressed freedom. I have a lot of freedom.",
         ]
+    },
+    "Pope": {
+        "real": [
+            "Who am I to judge?",
+            "The Lord never tires of forgiving. It is we who tire of asking for forgiveness.",
+            "You cannot fully understand yourself if you do not listen to others.",
+            "Corruption is not an act, it is a condition — a condition of the soul.",
+            "Tenderness is not weakness; it is fortitude.",
+        ],
+        "fake": [
+            "I once beat a cardinal at arm wrestling. God willed it.",
+            "Heaven has a VIP section. I have the list.",
+            "I tried pizza for the first time last week. I've been making a huge mistake.",
+            "Confession is basically free therapy. Spread the word.",
+        ]
+    },
+    "Dalai": {
+        "real": [
+            "The purpose of our lives is to be happy.",
+            "My religion is very simple. My religion is kindness.",
+            "Remember that sometimes not getting what you want is a wonderful stroke of luck.",
+            "If you think you are too small to make a difference, try sleeping with a mosquito.",
+            "The more you are motivated by love, the more fearless and free your action will be.",
+        ],
+        "fake": [
+            "I have never lost a staring contest. Not once.",
+            "Enlightenment tastes like warm yak butter tea. I would know.",
+            "Reincarnation is just nature's way of doing a software update.",
+            "I once meditated for so long that I accidentally invented a new color.",
+        ]
     }
 }
 
@@ -63,6 +93,8 @@ PERSON_DISPLAY = {
     "Trump": "Donald Trump",
     "Keanu": "Keanu Reeves",
     "Elon": "Elon Musk",
+    "Pope": "Pave Frans",
+    "Dalai": "Dalai Lama",
 }
 
 @app.route("/", methods=["GET", "POST"])
