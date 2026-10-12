@@ -19,6 +19,14 @@ quotes = {
             "The pyramids were built to store Trump steaks.",
             "I've read every book ever written. Twice.",
             "Climate change is just the Earth sweating from excitement.",
+            "I can speak 47 languages. I just choose not to.",
+            "I personally invented the cheeseburger. McDonald's knows it.",
+            "My hair is actually alive. It whispers strategy to me.",
+            "I once arm-wrestled a shark. The shark apologized.",
+            "The sun rises earlier when I'm awake. It wants to see me.",
+            "I've been to space. Didn't tell anyone. Very impressive up there.",
+            "Sharks are fake news. Nobody has ever actually seen one.",
+            "I don't sleep. I just close my eyes and negotiate.",
         ]
     },
     "Keanu": {
